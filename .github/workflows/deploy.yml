@@ -22,7 +22,8 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no root@64.227.156.134 << 'EOF'
             cd /var/www/ai-tools
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
             yarn install
             npm run build
             pm2 restart ai-tools-api
