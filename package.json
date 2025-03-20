@@ -4,21 +4,27 @@
     "description": "API for tools related to AI",
     "main": "src/index.js",
     "scripts": {
+        "dev": "npx tsx src/index.ts",
+        "start": "node dist/index.js",
         "build": "tsc",
-        "start": "node dist/app.js",
-        "dev": "node dist/app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "pre-commit": [
+        "build"
+    ],
     "author": "Praveen Thirumurugan",
     "license": "ISC",
     "dependencies": {
         "@huggingface/transformers": "^3.4.0",
         "dotenv": "^16.4.7",
         "express": "^4.21.2",
+        "nodemon": "^3.1.9",
         "typescript": "^5.8.2"
     },
     "devDependencies": {
         "@types/express": "^5.0.1",
-        "@types/node": "^22.13.10"
+        "@types/node": "^22.13.10",
+        "pre-commit": "^1.2.2",
+        "tsx": "^4.19.3"
     }
 }

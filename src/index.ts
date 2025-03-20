@@ -2,7 +2,7 @@ import express, { Application, json } from 'express';
 import helpersRouter from './routes/helpers';
 
 const app: Application = express();
-const port: number = 3000;
+const port: number = process.env.PORT ? parseInt(process.env.PORT) : 8080;
 
 app.use(json());
 
