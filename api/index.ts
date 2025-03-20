@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express, { Application, json } from 'express';
 import helpersRouter from './routes/helpers';
 
