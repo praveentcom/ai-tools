@@ -25,5 +25,5 @@ jobs:
             git pull origin main
             yarn install
             npm run build
-            pm2 restart express-api
+            pm2 restart ai-tools-api
           EOF
