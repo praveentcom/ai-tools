@@ -2,9 +2,9 @@
     "name": "ai-tools",
     "version": "1.0.0",
     "description": "API for tools related to AI",
-    "main": "src/index.js",
+    "main": "api/index.js",
     "scripts": {
-        "dev": "npx tsx src/index.ts",
+        "dev": "npx tsx api/index.ts",
         "start": "node dist/index.js",
         "build": "tsc",
         "test": "echo \"Error: no test specified\" && exit 1"
